@@ -1,0 +1,29 @@
+{
+  "outputDir": "./ai-mirror-guide",
+  "images": [
+    {
+      "prompt": "ChatGPT镜像站访问指南，notion风格，极简手绘线条，黑色线条白色背景，绿色点缀，对话框图标，火柴人使用笔记本电脑，网络连接符号，浅蓝云朵，清晰明了，16:9横版",
+      "output": "cover.jpg"
+    },
+    {
+      "prompt": "AI镜像站概念图，tech科技风格，深蓝电光青色，深灰背景，中心服务器图标，周围多个镜像节点，网络连接线，全球地图轮廓，科技感强，16:9横版",
+      "output": "concept.jpg"
+    },
+    {
+      "prompt": "镜像站注册登录流程，notion风格，极简手绘线条，黑色线条白色背景，浅蓝点缀，1-2-3-4步骤数字，箭头连接，邮箱图标密码图标，火柴人操作界面，流程清晰，16:9横版",
+      "output": "registration.jpg"
+    },
+    {
+      "prompt": "AI工具核心功能对比表，notion风格，极简手绘线条，黑色线条白色背景，表格布局三列四行，ChatGPT绿Claude橙Gemini蓝标识，对勾叉号图标，功能名称清晰，专业对比，16:9横版",
+      "output": "comparison.jpg"
+    },
+    {
+      "prompt": "AI辅助办公协作，warm温暖风格，温暖橙金黄色，奶油背景，火柴人团队在办公桌前，笔记本电脑，对话气泡，咖啡杯，温馨高效，16:9横版",
+      "output": "office-scene.jpg"
+    },
+    {
+      "prompt": "AI镜像站常见问题，notion风格，极简手绘线条，黑色线条白色背景，浅黄点缀，问号图标，Q&A列表，FAQ标识，清晰明了，16:9横版",
+      "output": "faq.jpg"
+    }
+  ]
+}

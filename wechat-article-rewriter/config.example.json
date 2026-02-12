@@ -1,0 +1,24 @@
+{
+  "fetchMethod": "python",
+  "pythonCrawlerPath": "./python-crawler",
+  "jinaApiKey": "",
+  "aiProvider": "anthropic",
+  "apiKey": "your-anthropic-api-key",
+  "model": "claude-3-5-sonnet-20241022",
+  "removeWatermarks": true,
+  "watermarkKeywords": [
+    "扫码关注",
+    "长按二维码",
+    "点击阅读原文",
+    "推荐阅读",
+    "往期精彩",
+    "点击关注",
+    "关注我们",
+    "更多精彩",
+    "精彩回顾",
+    "热门文章",
+    "点赞在看",
+    "分享收藏",
+    "右下角点个在看"
+  ]
+}

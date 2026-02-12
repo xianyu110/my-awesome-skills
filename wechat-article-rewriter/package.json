@@ -1,0 +1,22 @@
+{
+  "name": "wechat-article-rewriter",
+  "version": "1.0.0",
+  "description": "一键改写公众号文章并去除水印",
+  "main": "scripts/rewrite.ts",
+  "scripts": {
+    "rewrite": "ts-node scripts/rewrite.ts"
+  },
+  "keywords": [
+    "wechat",
+    "article",
+    "rewrite",
+    "ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
