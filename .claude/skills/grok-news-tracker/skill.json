@@ -1,0 +1,103 @@
+{
+  "name": "grok-news-tracker",
+  "displayName": "Grok News Tracker",
+  "version": "1.0.0",
+  "description": "自动追踪热点资讯，定时汇总整理，让信息主动找到你。支持多个信息源，智能分类和摘要。",
+  "author": {
+    "name": "baoyu",
+    "github": "https://github.com/baoyu",
+    "email": "baoyu@example.com"
+  },
+  "keywords": [
+    "news",
+    "tracking",
+    "automation",
+    "grok",
+    "ai-summary",
+    "hot-topics",
+    "information-aggregation"
+  ],
+  "category": "productivity",
+  "license": "MIT",
+  "main": "scripts/tracker.ts",
+  "dependencies": {
+    "bun": ">=1.0.0"
+  },
+  "config": {
+    "apiKey": {
+      "type": "string",
+      "description": "Grok API Key",
+      "required": true,
+      "env": "GROK_API_KEY",
+      "default": "sk-0bJSrMXaPm4Uvvs9RzjDWYh3eO81UkNpYELtfTMPJGRTxl6C"
+    },
+    "baseUrl": {
+      "type": "string",
+      "description": "API base URL",
+      "default": "https://apipro.maynor1024.live",
+      "required": false
+    },
+    "model": {
+      "type": "string",
+      "description": "Model name",
+      "default": "grok-4.1-fast",
+      "required": false
+    },
+    "sources": {
+      "type": "array",
+      "description": "News sources to track",
+      "default": ["tech", "ai", "startup"],
+      "required": false
+    },
+    "schedule": {
+      "type": "string",
+      "description": "Cron schedule for auto-tracking",
+      "default": "0 8 * * *",
+      "required": false
+    },
+    "outputFormat": {
+      "type": "string",
+      "description": "Output format: markdown, json, html",
+      "default": "markdown",
+      "required": false
+    }
+  },
+  "commands": [
+    {
+      "name": "track",
+      "description": "Track hot topics now",
+      "usage": "track [--sources tech,ai] [--output report.md]",
+      "examples": [
+        "track",
+        "track --sources tech,ai,startup",
+        "track --output daily-report.md"
+      ]
+    },
+    {
+      "name": "schedule",
+      "description": "Set up automatic tracking schedule",
+      "usage": "schedule [--cron '0 8 * * *']",
+      "examples": [
+        "schedule",
+        "schedule --cron '0 8,20 * * *'"
+      ]
+    },
+    {
+      "name": "report",
+      "description": "Generate summary report",
+      "usage": "report [--days 7] [--format markdown]",
+      "examples": [
+        "report",
+        "report --days 7 --format html"
+      ]
+    }
+  ],
+  "tags": [
+    "ai",
+    "news",
+    "automation",
+    "grok",
+    "tracking",
+    "summary"
+  ]
+}
