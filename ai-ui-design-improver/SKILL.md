@@ -1,3 +1,10 @@
+---
+name: "ziliu-content-distribution"
+description: "Multi-platform content distribution automation tool."
+version: "1.0.0"
+compatibility: ["claude-code\", \"cursor\", \"github-copilot"]
+---
+
 # AI 网站 UI 设计优化助手
 
 ## 技能简介

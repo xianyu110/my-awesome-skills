@@ -1,3 +1,10 @@
+---
+name: "wechat-auto-writer"
+description: "Automatic WeChat article writer. Generate articles optimized for WeChat public accounts."
+version: "1.0.0"
+compatibility: ["claude-code", "cursor", "github-copilot"]
+---
+
 # 公众号自动化写作工作流
 
 ## 核心理念

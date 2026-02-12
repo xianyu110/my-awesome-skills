@@ -1,0 +1,11 @@
+# 排除不需要上传的 skills
+wechat-article-rewriter/
+ai-mirror-publisher/
+
+# 临时文件和脚本
+*.tmp
+*.log
+clean-secrets.sh
+standardize-skills.sh
+standardize-skills.py
+batch-ai-mirror-github-uploader.md
