@@ -1,0 +1,23 @@
+{
+  "tts": {
+    "api_url": "http://localhost:8000/api/tts/generate",
+    "voice": "default",
+    "speed": 1.0,
+    "pitch": 1.0
+  },
+  "manim": {
+    "quality": "high",
+    "fps": 60,
+    "background_color": "#FFFFFF"
+  },
+  "ffmpeg": {
+    "video_codec": "libx264",
+    "audio_codec": "aac",
+    "resolution": "1920x1080",
+    "fps": 60
+  },
+  "output": {
+    "dir": "./output",
+    "keep_temp": false
+  }
+}

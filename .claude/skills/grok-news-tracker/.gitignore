@@ -1,0 +1,25 @@
+# Environment
+.env
+.env.local
+
+# Output
+reports/
+*.md
+*.html
+*.json
+
+# Exceptions
+!README.md
+!SKILL.md
+!skill.json
+
+# Dependencies
+node_modules/
+bun.lockb
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

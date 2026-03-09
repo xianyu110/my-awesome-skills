@@ -1,0 +1,30 @@
+{
+  "outputDir": "./article-images",
+  "images": [
+    {
+      "prompt": "科技感的AI人工智能大脑，蓝色调，专业设计，16:9比例",
+      "output": "cover.jpg",
+      "style": "cover"
+    },
+    {
+      "prompt": "程序员在现代化办公室写代码，专注的表情",
+      "output": "coding-scene.jpg",
+      "style": "illustration"
+    },
+    {
+      "prompt": "笔记本电脑屏幕显示代码，咖啡杯在旁边，温馨",
+      "output": "workspace.jpg",
+      "style": "photo"
+    },
+    {
+      "prompt": "团队协作讨论，白板上有图表，明亮的会议室",
+      "output": "teamwork.jpg",
+      "style": "illustration"
+    },
+    {
+      "prompt": "成功的庆祝场景，击掌，充满活力",
+      "output": "success.jpg",
+      "style": "illustration"
+    }
+  ]
+}

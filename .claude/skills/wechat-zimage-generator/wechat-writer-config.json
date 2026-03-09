@@ -1,0 +1,28 @@
+{
+  "markdown": "test.md",
+  "author": "内容创作助手",
+  "theme": "grace",
+  "outputDir": "./wechat-writer-output",
+  "images": [
+    {
+      "prompt": "公众号写作，手机屏幕显示文章，创意写作氛围，温暖色调，专业设计感",
+      "position": "cover",
+      "style": "cover"
+    },
+    {
+      "prompt": "创作者在电脑前写作，灵感迸发，咖啡杯在旁边，温馨的工作环境",
+      "position": "inline",
+      "style": "illustration"
+    },
+    {
+      "prompt": "手机屏幕展示公众号文章排版，清晰的标题和段落，现代简约风格",
+      "position": "inline",
+      "style": "illustration"
+    },
+    {
+      "prompt": "读者在手机上阅读文章，点赞和转发的互动场景，充满活力",
+      "position": "inline",
+      "style": "illustration"
+    }
+  ]
+}

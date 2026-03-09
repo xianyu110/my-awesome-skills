@@ -1,0 +1,28 @@
+{
+  "markdown": "Claude vs ChatGPT vs Gemini：全方位对比与选用指南.md",
+  "author": "AI评测",
+  "theme": "default",
+  "outputDir": "./claude-comparison-output",
+  "images": [
+    {
+      "prompt": "三个AI助手对比，Claude、ChatGPT、Gemini，专业科技感，蓝紫色调",
+      "position": "cover",
+      "style": "cover"
+    },
+    {
+      "prompt": "AI模型性能对比图表，数据可视化，专业商务风格",
+      "position": "inline",
+      "style": "illustration"
+    },
+    {
+      "prompt": "用户在选择AI工具，思考对比，简洁插画风格",
+      "position": "inline",
+      "style": "illustration"
+    },
+    {
+      "prompt": "不同场景下使用AI，办公、学习、创作，多场景展示",
+      "position": "inline",
+      "style": "illustration"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "markdown": "../../Gemini 3写论文无敌！2026届硕博毕业论文救星，这3个神级指令导师建议直接收藏！.md",
+  "author": "AI助手",
+  "theme": "grace",
+  "outputDir": "./gemini-article-output",
+  "images": [
+    {
+      "prompt": "学术论文写作，Gemini AI助手，专业学术氛围，蓝色科技感",
+      "position": "cover",
+      "style": "cover"
+    },
+    {
+      "prompt": "研究生在图书馆写论文，专注认真，温馨的学习氛围",
+      "position": "inline",
+      "style": "illustration"
+    },
+    {
+      "prompt": "AI辅助写作界面，电脑屏幕显示论文内容，现代化",
+      "position": "inline",
+      "style": "illustration"
+    },
+    {
+      "prompt": "成功答辩的场景，学生微笑，导师鼓掌，充满喜悦",
+      "position": "inline",
+      "style": "illustration"
+    }
+  ]
+}
