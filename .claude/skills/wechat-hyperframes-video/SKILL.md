@@ -167,7 +167,8 @@ ffprobe -v error -show_entries format=duration -of default=nw=1:nk=1 assets/narr
 
 字幕样式建议：
 
-- 放在底部安全区
+- 竖屏字幕不要贴到最底部播放器控制区；优先放在画面中下部可视区，例如 `1080x1920` 画布可用 `bottom: 360px` 到 `460px`，让观众在平台 UI 覆盖时仍能看到
+- 横屏字幕放在底部安全区上方，例如 `1920x1080` 画布可用 `bottom: 100px` 到 `140px`
 - 使用白字、描边或阴影
 - 单条不宜太长
 - 避免挡住正文图片关键内容
