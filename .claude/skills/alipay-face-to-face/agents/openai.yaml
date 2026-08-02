@@ -1,0 +1,4 @@
+interface:
+  display_name: "支付宝当面付"
+  short_description: "实现、审查与排查支付宝当面付二维码支付、通知验签和订单对账"
+  default_prompt: "使用 $alipay-face-to-face 实现并检查支付宝当面付二维码支付、回调验签与订单对账。"
