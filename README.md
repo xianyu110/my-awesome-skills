@@ -16,6 +16,7 @@
 - `wechat-publisher-0.1.0`: 微信文章发布
 - `wechat-zimage-generator`: 微信图片生成器
 - `xiaohongshu`: 小红书相关技能
+- `post-launch-backlinks`: 上线后发外链清单（V2EX / GitHub / 导航站 / CSDN / GSC）
 - `zimage`: Z-Image 模型图片生成
 
 ## 🚀 快速开始
