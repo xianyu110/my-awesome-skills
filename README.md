@@ -12,6 +12,7 @@
 - `efficient-git-workflow`: 高效代码提交工作流
 - `parallel-task-manager`: 并行任务管理器
 - `social-push`: 社交媒体推送
+- `video-tool-homepage`: 视频工具型 SaaS 首页设计与 React/CSS 模板
 - `wechat-auto-writer`: 微信文章自动写作
 - `wechat-publisher-0.1.0`: 微信文章发布
 - `wechat-zimage-generator`: 微信图片生成器

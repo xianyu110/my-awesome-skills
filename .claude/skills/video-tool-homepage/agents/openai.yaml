@@ -1,0 +1,4 @@
+interface:
+  display_name: "Video Tool Homepage"
+  short_description: "Build conversion-focused video tool SaaS homepages"
+  default_prompt: "Use $video-tool-homepage to build a polished, responsive homepage for my video utility."
