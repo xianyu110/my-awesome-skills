@@ -6,6 +6,7 @@
 
 - `ai-code-generator`: AI 辅助代码生成器
 - `book-writing-spec`: 书籍写作规范
+- `codex-claude-desktop`: Codex 与 Claude Desktop 中转配置（通过 CC Switch 接到第三方中转）
 - `content`: 各种内容创作相关的 skills (baoyu 系列)
 - `desktop-control`: 桌面控制
 - `dev-efficiency-monitor`: 开发效率监控器
