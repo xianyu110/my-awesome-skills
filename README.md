@@ -17,6 +17,7 @@
 - `wechat-zimage-generator`: 微信图片生成器
 - `xiaohongshu`: 小红书相关技能
 - `post-launch-backlinks`: 上线后发外链清单（V2EX / GitHub / 导航站 / CSDN / GSC）
+- `geo`: GEO内容闭环（从竞品和好页面挖真实痛点，按细分问法做概览页与 Q&A，再用收录和收入做归因维护）
 - `zimage`: Z-Image 模型图片生成
 
 ## 🚀 快速开始
