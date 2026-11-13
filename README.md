@@ -20,6 +20,7 @@
 - `xiaohongshu`: 小红书相关技能
 - `post-launch-backlinks`: 上线后发外链清单（V2EX / GitHub / 导航站 / CSDN / GSC）
 - `xinci-radar`: 出海工具站新词雷达（WhoisDS / 同行 sitemap / Google Trends 交叉验证与 5 年分类）
+- `geo-audit`: GEO 体检与分批收录（爬虫可读性、精简 sitemap、站长平台、MCP/NPM/awesome/周刊）
 - `geo`: GEO内容闭环（从竞品和好页面挖真实痛点，按细分问法做概览页与 Q&A，再用收录和收入做归因维护）
 - `zimage`: Z-Image 模型图片生成
 
