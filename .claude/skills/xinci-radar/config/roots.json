@@ -1,0 +1,29 @@
+{
+  "groups": {
+    "通用工具后缀": [
+      "translator", "processor", "designer", "compiler", "analyzer",
+      "evaluator", "sender", "receiver", "interpreter", "uploader",
+      "calculator", "generator", "sample", "template", "format",
+      "builder", "scheme", "pattern", "checker", "detector",
+      "scraper", "manager", "example", "explorer", "dashboard"
+    ],
+    "运营与流程词根": [
+      "planner", "tracker", "recorder", "optimizer", "scheduler",
+      "converter", "viewer", "extractor", "convert", "monitor",
+      "notifier", "verifier", "simulator", "assistant", "constructor"
+    ],
+    "对比与连接词根": [
+      "comparator", "navigator", "syncer", "connector", "online",
+      "cataloger", "responder", "downloader"
+    ],
+    "创作与内容处理词根": [
+      "maker", "creator", "editor", "guide", "compressor",
+      "upscaler", "enhancer", "remover", "resizer", "cropper",
+      "subtitler", "merger", "splitter"
+    ],
+    "图像与社媒素材词根": [
+      "transcriber", "vectorizer", "colorizer", "prompts", "mockup",
+      "avatar", "pfp", "meme", "thumbnail", "banner", "hook", "caption"
+    ]
+  }
+}

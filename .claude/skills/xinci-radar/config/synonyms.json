@@ -1,0 +1,23 @@
+{
+  "groups": [
+    ["nba", "fantasy basketball", "fantasybasketball"],
+    ["evaluator", "analyzer", "analyser"],
+    ["generator", "maker", "creator", "builder"],
+    ["editor", "processor"],
+    ["remover", "eraser", "eraser tool"],
+    ["enhancer", "upscaler", "upscale"],
+    ["converter", "convert", "conversion"],
+    ["transcriber", "subtitler", "transcript", "captions", "caption"],
+    ["checker", "detector", "verifier"],
+    ["designer", "design"],
+    ["compressor", "compress"],
+    ["resizer", "cropper", "resize", "crop"],
+    ["thumbnail", "thumb", "yt thumbnail"],
+    ["avatar", "pfp", "profile picture"],
+    ["vectorizer", "vectorise", "vectorize", "svg"],
+    ["colorizer", "colourizer", "colorize"],
+    ["downloader", "download"],
+    ["translator", "translate"],
+    ["background", "bg", "backdrop"]
+  ]
+}

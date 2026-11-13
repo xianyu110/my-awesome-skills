@@ -1,0 +1,35 @@
+# 8 leading AI image/video/audio tool sites with verified public sitemaps (2026-11-11).
+# lastmod is page update time only, never keyword onset.
+sites:
+  - name: PhotoRoom
+    homepage: https://www.photoroom.com
+    sitemaps:
+      - https://www.photoroom.com/sitemap.xml
+  - name: remove.bg
+    homepage: https://www.remove.bg
+    sitemaps:
+      - https://www.remove.bg/sitemap.xml
+  - name: HeyGen
+    homepage: https://www.heygen.com
+    sitemaps:
+      - https://www.heygen.com/sitemap.xml
+  - name: ElevenLabs
+    homepage: https://elevenlabs.io
+    sitemaps:
+      - https://elevenlabs.io/sitemap.xml
+  - name: InVideo
+    homepage: https://invideo.io
+    sitemaps:
+      - https://invideo.io/sitemap.xml
+  - name: Pixelcut
+    homepage: https://www.pixelcut.ai
+    sitemaps:
+      - https://www.pixelcut.ai/sitemap.xml
+  - name: Pika
+    homepage: https://pika.art
+    sitemaps:
+      - https://pika.art/sitemap.xml
+  - name: Magic Studio
+    homepage: https://magicstudio.com
+    sitemaps:
+      - https://magicstudio.com/sitemap.xml
