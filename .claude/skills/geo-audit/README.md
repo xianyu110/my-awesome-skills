@@ -8,7 +8,7 @@ GEO 体检与分批收录：让搜索引擎和 AI 爬虫读得懂网站，再分
 - 需要补齐 robots.txt、sitemap、hreflang、结构化数据、llms.txt
 - 要把首页 FAQ 第一条写成可引用的产品定义
 - 准备向 Google、Bing、百度、头条、搜狗提交网站，但不要一次提交全部详情页
-- 把真实的 MCP、NPM 包或开源项目提交到官方注册中心、Smithery、awesome 列表、HelloGitHub、开源周刊
+- 把真实的 MCP、NPM 包或开源项目提交到官方 MCP Registry、Smithery、远程 MCP awesome 列表、HelloGitHub、开源周刊（私有仓库、未发布的包不要交）
 
 ## 不要用它做
 
