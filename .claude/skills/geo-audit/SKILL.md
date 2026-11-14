@@ -102,22 +102,60 @@ description: >-
 
 在站点本身可读、第一批页面可访问之后，再考虑目录。只提交真实存在的产物。没有公开 MCP、没有已发布的 NPM 包，就不要编一个去交；应先做出真实可安装的包，或在报告里写明跳过原因。
 
-按产品实际情况选用（没有对应产物就跳过）：
+### 先准备产物，再选渠道
 
-- 官方 MCP 注册中心或目录（只有真正可安装、可运行的 MCP 才交）
-- [Smithery](https://smithery.ai/)（同上）
-- NPM（只有已经发布的真实包）
-- GitHub 上相关的 awesome 列表
-- [HelloGitHub](https://hellogithub.com/)
-- 阮一峰[《科技爱好者周刊》](https://github.com/ruanyf/weekly)等开源周刊（按其当期投稿要求）
+远程 MCP 可以先交官方注册中心，不必先发 NPM。但大多数 GitHub 列表、HelloGitHub 和开源周刊需要一个**公开**仓库；私有主站仓库的链接会被拒，也不要用来当项目地址。
 
-执行规则：
+按需准备（没有就跳过，不要虚构）：
 
-- 先读该列表的 CONTRIBUTING 或提交说明。不满足门槛（例如要求 star、完整文档、不收未发布项目）就不要硬提。
-- 自动提交时：fork 仓库 → 按格式只改需要的一行或一篇文档 → 开 PR，不要改无关文件。
-- 合集类仓库的介绍优先放 GitHub 仓库链接；普通产品介绍放正式域名。
-- 需要登录的投稿页：用户登录，其余代填；提交前让用户看草稿或明确确认再发出。
-- 导航站、产品目录、社区帖交给 `post-launch-backlinks`，不要在这里重复做一遍。
+- 可公开访问的远程 MCP（Streamable HTTP 或 SSE），`initialize` 能成功
+- 官方 MCP Registry 的 `server.json`（`description` 不超过 100 个字符；远程服务用 `remotes`，可省略 `packages`）
+- 一个小的公开 integrations 仓库（建议 MIT）：`server.json`、README、可选 `SKILL.md` 与 CLI，不要把私有应用源码公开
+- 只有需要 `npx` 发现时，才发 NPM 包
+- Agent Skill 列表还要有公开的 `SKILL.md`；部分列表另有 star 数、仓库年龄门槛
+
+### 推荐提交顺序
+
+1. **[官方 MCP Registry](https://registry.modelcontextprotocol.io/)**（信号最高，部分目录会自动跟进）
+   - 文档：[Quickstart](https://modelcontextprotocol.io/registry/quickstart)、[Authentication](https://modelcontextprotocol.io/registry/authentication)
+   - 用域名命名空间（如 `com.example/app`）时，用 HTTP 或 DNS 证明域名所有权，不要用会把名字改成 `io.github.user/...` 的 GitHub 登录，除非你本来就要那个名字
+   - HTTP 验证：把证明文件放在 apex 的 `https://{domain}/.well-known/mcp-registry-auth`，必须是 **200、text/plain、不重定向**。Registry 会用 `User-Agent: mcp-registry/1.0` 和 `Accept: text/plain` 来拉，且不跟随跳转；WAF 不要拦这条路径
+   - DNS 验证：TXT 必须写在域名 apex（`example.com`），不要写到 `_mcp-auth.` 这类子域名
+   - 发布：`mcp-publisher login http --domain {domain}`（或 `dns`），再 `mcp-publisher validate`、`mcp-publisher publish`
+   - 发布后可用 `https://registry.modelcontextprotocol.io/v0/servers?search={name}` 核对。Glama 等常会从这里自动收录，之后再去认领即可
+2. **[Smithery](https://smithery.ai/new)**
+   - 文档：https://smithery.mintlify.dev/docs/build/publish
+   - 表单填入远程 MCP URL，或 `smithery mcp publish "https://{host}/mcp" -n {org}/{name}`（需要 Smithery 账号）
+   - 若扫描被拦，放行 `User-Agent: SmitheryBot/1.0`。核对时以 Registry API 为准，网页 badge 旧路径可能 404
+3. **公开 integrations 仓库**（还没有的话，这一步会挡住后面大多数 GitHub 渠道）
+4. **NPM**（可选）：只有要 `npx {包名}` 时才发。远程-only 的官方 Registry 条目不强制要 NPM。若同时以 NPM 包身份登记 MCP，按官方文档在 `package.json` 写 `mcpName`
+5. **远程 MCP 的 awesome 列表**（先读 CONTRIBUTING，按现有分类字母序插入，不要自造分类）
+   - [TensorBlock/awesome-mcp-servers](https://github.com/TensorBlock/awesome-mcp-servers)：用「Add MCP server」[issue 模板](https://github.com/TensorBlock/awesome-mcp-servers/issues/new?template=add-mcp-server.yml)，通过后通常由机器人开 PR。项目地址优先用公开 GitHub 仓库
+   - [punkpeye/awesome-remote-mcp-servers](https://github.com/punkpeye/awesome-remote-mcp-servers)：给**远程** MCP 用。CI 会检查端点能否 `initialize`。按其 CONTRIBUTING，提交者先 star；由代理开的 PR 在标题末尾加 `🤖🤖🤖`
+   - 不要交到 [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers)（那份主要收本地 / stdio 服务）
+   - [mcpservers.org/submit](https://mcpservers.org/submit)：表单；有免费审核和付费加急。有的条目也会从 GitHub / 官方 Registry 自动出现
+6. **Agent Skill 列表**（先有公开 `SKILL.md`，并核对门槛）
+   - [karanb192/awesome-claude-skills](https://github.com/karanb192/awesome-claude-skills)：描述通常不超过 150 个字符，按分类字母序
+   - [heilcheng/awesome-agent-skills](https://github.com/heilcheng/awesome-agent-skills)：公开仓库、**不少于 20 个 star**，且仓库**早于 14 天**；只改 README，一行介绍通常不超过 100 个字符
+   - [BehiSecc/awesome-claude-skills](https://github.com/BehiSecc/awesome-claude-skills)：常见门槛是 **超过 60 个 star**，新仓库先不要硬提
+7. **开源周刊**（必须能提供可审查的公开仓库）
+   - [HelloGitHub](https://github.com/521xueweihan/HelloGitHub/issues/new?template=submit-cn.yaml)：只用官方模板开 **一条** issue，不要重复提交。只要 GitHub 地址；标题约 20 字（最长 50），描述 32–256 字，必须写亮点。标准见 [HelloGitHub#271](https://github.com/521xueweihan/HelloGitHub/issues/271)
+   - 阮一峰[《科技爱好者周刊》](https://github.com/ruanyf/weekly)：按「开源自荐」常见结构写介绍、特性、截图、项目地址。录用看当期编辑，不保证登上最近几期
+
+### 先跳过或另找出路
+
+- [PulseMCP 提交表单](https://www.pulsemcp.com/submit) 自 2026 年 9 月起暂停，维护方要求先走官方 MCP Registry
+- [yzfly/Awesome-MCP-ZH](https://github.com/yzfly/Awesome-MCP-ZH) 可能拒「公开仓库里只有元数据 / 客户端、没有可验证的 MCP 实现」的远程服务；没补上实现就不要再交
+- Product Hunt、导航站、TAAFT、Toolify 等产品目录交给 `post-launch-backlinks`，不要在这里重复做一遍
+
+### 执行规则
+
+- 先读该列表的 CONTRIBUTING 或提交说明。不满足门槛（star、仓库年龄、公开仓库、完整文档、不收未发布项目）就不要硬提
+- 先在目标仓库搜索项目名、域名、MCP 名称，避免重复开 issue 或 PR
+- 自动提交时：fork 仓库 → 按格式只改需要的一行或一篇文档 → 开 PR，不要改无关文件
+- 合集类仓库的介绍优先放**公开** GitHub 仓库链接；普通产品介绍放正式域名。同时写上远程 MCP URL、官方 Registry 名称和文档地址
+- 需要登录的投稿页：用户登录，其余代填；提交前让用户看草稿或明确确认再发出
+- 介绍必须属实：真实工具名、真实端点、真实鉴权方式。不要把尚未发布的包或私有仓库写成已上线
 
 ## 交付
 
